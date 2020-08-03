@@ -1,0 +1,49 @@
+APSSDC Android Application Development
+
+Day-1
+====Instuctions====
+1.Post the doubts on the chats box
+2.mute mic and turn of the webcam 
+3.user name:Name-Roll number-College name
+
+Muneiah tellkula
+Devi anusha 
+Mani kanta gopal 
+
+====Android=======
+"An Android is platform which consisits of the mobile oparating system based on linux kernal"
+Which company ?
+in 2003 Android Inc :initially they started for digital camera OS...
+Who are the key developer the android
+1.Andy Rubin
+2.Nick Sears
+3.Rich miner
+4.Crish White ....
+
+too loosess 
+
+in 2005 .they shifted to Mobile OS
+2005 Google was adapoted this ..
+2008->first mobile OS ->HTC -HTC Dream
+Alpha
+Beta
+Cupcake
+donut
+eclar
+Froyo
+gingerbread...Android 10 ..
+
+Android Platform Arctecture
+============
+1.System apps and User Apps:
+ System apps:in built apps:messages,clock,clac..
+ user apps:user defiend apps:goto meting,whtsup..etc
+
+2.Java API Framework:it will be provide an interfcae to our apps
+3.Runtime or native api:App run time(exution it will be enable )permission will be handle
+4.HAL(Hardware abstration layer):it will provide the interface b/w software and h/w components
+ex:Button(s/w) and camera(H/w) 
+5.Linux kernal:It will be manage all resourses
+	memory,power,..etc
+
+HTML->XML-->xmls-->schema
