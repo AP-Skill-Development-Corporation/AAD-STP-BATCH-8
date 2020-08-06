@@ -1,8 +1,10 @@
 package com.muneiah.hellotoast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +17,11 @@ int c=0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         label=findViewById(R.id.tv_data);
+        if (savedInstanceState !=null && savedInstanceState.containsKey("key")){
+            c=savedInstanceState.getInt("key");
+            label.setText(String.valueOf(c));
+        }
+
     }
 
     public void show_ToastMessage(View view) {
@@ -25,5 +32,11 @@ int c=0;
     public void show_count(View view) {
         c++;
         label.setText(String.valueOf(c));
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("key",c);
     }
 }
