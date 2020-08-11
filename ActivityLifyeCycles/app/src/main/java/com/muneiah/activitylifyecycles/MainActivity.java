@@ -24,7 +24,7 @@ TextView tv_label;
     @Override
     protected void onStart() {
         super.onStart();
-        tv_label.append("OnStrat() \n");
+        tv_label.append("OnStart() \n");
         Log.i("MainActivity","onStart()");
         Toast.makeText(this, "App is Started ", Toast.LENGTH_SHORT).show();
 
@@ -69,7 +69,7 @@ TextView tv_label;
     @Override
     protected void onRestart() {
         super.onRestart();
-        tv_label.append("OnRestrat() \n");
+        tv_label.append("OnRestart() \n");
         Log.i("MainActivity","onRestart()");
         Toast.makeText(this, "App is ReStrated ", Toast.LENGTH_SHORT).show();
 
