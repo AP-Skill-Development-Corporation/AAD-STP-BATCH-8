@@ -26,8 +26,8 @@ List<Students_entity> entityList;
         name=findViewById(R.id.et_name);
         rollnumber=findViewById(R.id.et_rollNumber);
         rec=findViewById(R.id.recyler);
-        dataBase=Room.databaseBuilder(this,StudentDataBase.class,"ap")
-                .allowMainThreadQueries().build();
+        /*dataBase=Room.databaseBuilder(this,StudentDataBase.class,"ap")
+                .allowMainThreadQueries().build();*/ //normal db
 
 
     }
