@@ -1,6 +1,7 @@
 package com.muneiah.studentslogwithroomdb;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,6 +55,17 @@ public class StudentAdaper extends RecyclerView.Adapter<StudentAdaper.StudentVie
             n=itemView.findViewById(R.id.tv_name);
             r=itemView.findViewById(R.id.tv_rollnumber);
             d=itemView.findViewById(R.id.tv_delete);
+            e.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String nam=n.getText().toString();
+                    String rol=r.getText().toString();
+                    Intent i=new Intent(ctx,UpdateActivity.class);
+                    i.putExtra("key_name",nam);
+                    i.putExtra("key_roll",rol);
+                    ctx.startActivity(i);
+                }
+            });
         }
     }
 }
